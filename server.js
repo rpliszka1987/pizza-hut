@@ -10,6 +10,7 @@ app.use(express.static("public"));
 
 app.use(require("./routes"));
 
+// Connection
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost:27017/pizza-hunt",
   {
